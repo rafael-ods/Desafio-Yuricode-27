@@ -1,0 +1,115 @@
+.tradicional {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 2.5rem 0;
+}
+
+.tradicional__imagem {
+    background: url(../../img/img\ segurando\ prato.svg) center / cover no-repeat;
+    display: inline-block;
+    width: 604px;
+    height: 500px;
+}
+
+.tradicional__conteudo {
+    width: 500px;
+}
+
+.tradicional__titulo {
+    color: var(--cor-preto);
+    font-family: var(--fonte-titulo);
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 130%;
+}
+
+.tradicional__descricao {
+    color: var(--cor-preto);
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 160%;
+    margin: 24px 0 40px;
+}
+
+.tradiconal__btn {
+    color: var(--cor-vermelho);
+    font-size: 24px;
+    line-height: 29px;
+}
+
+@media screen and (max-width: 1024px) {
+    .tradicional__imagem {
+        width: 450px;
+        height: 380px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .tradicional {
+        justify-content: center;
+    }
+
+    .tradicional__imagem {
+        width: 500px;
+    }
+
+    .tradicional__conteudo {
+        margin-top: 25px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .tradicional__titulo {
+        font-size: 24px;
+        line-height: 130%;
+    }
+
+    .tradicional__descricao {
+        font-size: 16px;
+        line-height: 160%;
+    }
+
+    .tradiconal__btn {
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .tradicional__imagem {
+        width: 450px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .tradicional__imagem {
+        width: 360px;
+    }
+}
+
+@media screen and (max-width: 390px) {
+   .tradicional__imagem {
+    width: 350px;
+   }
+}
+
+
+@media screen and (max-width: 375px) {
+    .tradicional__imagem {
+        width: 326px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .tradicional__imagem {
+     width: 308px;
+    }
+ }
+@media screen and (max-width: 320px) {
+    .tradicional {
+        padding: 1.5rem 0;
+    }
+    .tradicional__imagem {
+        width: 270px;
+    }
+}

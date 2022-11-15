@@ -1,0 +1,121 @@
+.localizacao__titulo {
+    color: var(--cor-preto);
+    font-family: var(--fonte-titulo);
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 123%;
+    margin-bottom: 48px;
+}
+
+.localizacao__mapa {
+    width: 100%;
+    height: 500px;
+    border-radius: 16px;
+}
+
+.input__container {
+    margin: 56px 0 100px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+
+.input {
+    color: var(--cor-preto);
+    font-weight: 400;
+    font-size: 24px;
+    width: 630px;
+    height: 70px;
+    outline: none;
+    border: 1px solid var(--cor-preto);
+    border-radius: 10px 0px 0px 10px;
+    padding-left: 68px;
+
+}
+
+input::placeholder {
+    color: var(--cor-preto);
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 123%;
+
+}
+
+.icon__localizacao {
+    background: url(../../img/fi_map-pin.svg) center / cover no-repeat;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 195px;
+    top: 20px;
+}
+
+.input__btn__container {
+    background-color: var(--cor-vermelho);
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 123%;
+    
+    display: flex;
+    align-items: center;
+    padding: 0 3rem;
+    border-radius: 0px 10px 10px 0px;
+}
+
+.input__btn {
+    color: var(--cor-branco);
+    text-decoration: none;
+}
+
+.input__btn-buscar--icon {
+    background: url(../../img/search.svg) center / cover no-repeat;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+    .icon__localizacao {
+        left: 65px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .icon__localizacao {
+        left: 18px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .input {
+        width: 100%;
+        height: 40px;
+        font-size: 12px;
+        line-height: 123%;
+    }
+
+    .input::placeholder {
+        font-size: 12px;
+        line-height: 123%;
+    }
+
+    .input__btn__container {
+        padding: 0.6rem 1rem;
+    }
+
+    .input__btn {
+        display: none;
+    }
+    .input__btn-buscar--icon {
+        display: block;
+    }
+
+    .icon__localizacao {
+        width: 20px;
+        height: 20px;
+        top: 14px;
+    }
+}   

@@ -1,0 +1,28 @@
+@import url(./cabecalho/cabecalho.css);
+@import url(./apresentacao/apresentacao.css);
+@import url(./tradicional/tradicional.css);
+@import url(./pedidos/pedidos.css);
+@import url(./comentarios/comentarios.css);
+@import url(./localizacao/localizacao.css);
+@import url(./rodape/rodape.css);
+
+:root {
+    --cor-vermelho: #DA2535;
+    --cor-preto: #292929;
+    --cor-cinza: #616161;
+    --cor-branco: #FBFBFB;
+    --cor-branco-claro: #F3F3F3;
+    --fonte-titulo: 'Montserrat', sans-serif;
+    --fonte-texto: 'Inter', sans-serif;
+}
+
+body {
+    font-family: var(--fonte-texto);
+}
+
+
+.container {
+    padding: 0 1.5rem;
+    margin: 0 auto;
+    max-width: 1230px;
+}

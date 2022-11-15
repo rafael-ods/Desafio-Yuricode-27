@@ -1,0 +1,101 @@
+.apresentacao {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+.apresentacao__titulo {
+    color: var(--cor-preto);
+    font-family: var(--font-titulo);
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 59px;
+}
+
+.apresentacao__descricao {
+    color: var(--cor-preto);
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 160%;
+    margin: 24px 0 48px;
+}
+
+.apresentacao__btn {
+    color: var(--cor-branco);
+    background-color: var(--cor-vermelho);
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    padding: 0.7rem 5.5rem;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+
+.apresentacao__imagem {
+    background: url(../../img/kisspng-sushi.svg) center / cover no-repeat;
+    display: inline-block;
+    width: 400px;
+    height: 534.7px;
+    margin: 100px 0;
+}
+
+
+@media screen and (max-width: 768px) {
+    .apresentacao {
+        justify-content: center;
+    }
+
+    .apresentacao__imagem {
+        display: none;
+    }
+
+    .apresentacao__conteudo {
+        margin: 50px 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .apresentacao {
+        justify-content: flex-start;
+    }
+
+    .apresentacao__titulo {
+        font-size: 32px;
+        line-height: 123%;
+    }
+
+    .apresentacao__descricao {
+        font-size: 16px;
+        line-height: 160%;
+    }
+
+    .apresentacao__btn {
+        font-size: 16px;
+        line-height: 19px;
+        display: inline-block;
+        width: 57%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .apresentacao__btn {
+        width: 47%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .apresentacao__btn {
+        width: 46%;
+    }
+}
+
+
+@media screen and (max-width: 320px) {
+    .apresentacao__btn {
+        width: 35%;
+    }  
+}

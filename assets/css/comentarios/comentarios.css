@@ -1,0 +1,88 @@
+.comentarios__titulo {
+    color: var(--cor-preto);
+    font-family: var(--fonte-titulo);
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 123%;
+    margin: 100px 0 46px 0;
+}
+
+
+.comentarios__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.comentarios__card {
+    background-color: var(--cor-branco-claro);
+    border-radius: 16px;
+    width: 604px;
+    height: 390px;
+    margin-bottom: 100px;
+}
+
+.comentarios__card__pessoa {
+    margin: 41px 0 0 40px;
+}
+
+.comentarios__card__conteudo__titulo {
+    color: var(--cor-preto);
+    font-family: var(--fonte-titulo);
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 123%;
+    margin: 24px 0 0 40px;
+}
+
+.comentarios__card__conteudo__descricao {
+    color: var(--cor-cinza);
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 160%;
+    margin: 0 0 6px 40px;
+
+}
+
+.imagem-estrelas {
+    background: url(../../img/estrelas.svg) center / cover no-repeat;
+    display: inline-block;
+    width: 122px;
+    height: 19px;
+    margin-left: 40px;
+}
+
+@media screen and (max-width: 1024px) {
+    .comentarios__titulo {
+        text-align: center;
+    }
+
+    .comentarios__container {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .comentarios__titulo {
+        font-size: 24px;
+        line-height: 123%;
+    }
+    .comentarios__card__pessoa {
+        margin: 24px 0 0 0px;
+    }
+    .comentarios__card__conteudo__titulo {
+        font-size: 18px;
+        line-height: 123%;
+        margin: 24px 0 0 0px;
+    }
+
+    .comentarios__card__conteudo__descricao {
+        font-size: 16px;
+        line-height: 160%;
+        margin: 24px 0 0 0px;
+    }
+    .imagem-estrelas {
+        margin-left: 0px;
+    }
+}

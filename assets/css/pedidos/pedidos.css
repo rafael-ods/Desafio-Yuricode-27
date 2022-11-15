@@ -1,0 +1,130 @@
+.pedidos {
+    padding: 2rem 0;
+}
+
+.pedidos__titulo {
+    color: var(--cor-preto);
+    font-family: var(--fonte-titulo);
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 59px;
+    text-align: center;
+}
+
+.pedidos__container {
+    margin-top: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.pedidos__card {
+    background-color: var(--cor-branco-claro);
+    border-radius: 32px;
+    width: 380px;
+    height: 450px;
+    position: relative;
+
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+}
+
+.pedidos__imagem {
+    position: absolute;
+    left: 44px;
+    top: -100px;
+}
+
+.card__conteudo {
+    margin-top: 150px;
+}
+
+.card__titulo {
+    color: var(--cor-preto);
+    font-family: var(--fonte-titulo);
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 39px;
+    margin-top: 51px;
+}
+
+.card__descricao {
+    color: var(--cor-cinza);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+    margin: 16px 0 32px 0;
+}
+
+.card__valor {
+    color: var(--cor-preto);
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 39px;
+}
+
+@media screen and (max-width: 1024px) {
+    .pedidos__container {
+        justify-content: space-around;
+        row-gap: 140px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .pedidos__titulo {
+        font-size: 24px;
+        line-height: 123%;
+    }
+    
+    .comentarios__card__conteudo {
+        text-align: center;
+    }
+
+    .card__titulo {
+        font-size: 24px;
+        line-height: 123%;
+    }
+
+    .card__descricao {
+        font-size: 16.0514px;
+        line-height: 160%;
+    }
+
+    .card__valor {
+        font-size: 32.1029px;
+        line-height: 39px;
+
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .pedidos__imagem {
+        left: 24px;
+    }
+ }
+ 
+
+@media screen and (max-width: 375px) {
+    .pedidos__imagem {
+        left: 20px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .pedidos__imagem {
+        left: 11px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .pedidos__imagem {
+        width: 239px;
+        left: 20px;
+    }
+}
