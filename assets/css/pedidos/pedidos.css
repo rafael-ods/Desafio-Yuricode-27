@@ -103,6 +103,12 @@
     }
 }
 
+@media screen and (max-width: 414px) {
+    .pedidos__imagem {
+        left: 40px;
+    }
+}
+
 @media screen and (max-width: 390px) {
     .pedidos__imagem {
         left: 24px;
